@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "segmentation"
+version = "0.1.0"
+description = ""
+authors = ["shamada <shamada@jeol.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+segment-anything = {git = "https://github.com/facebookresearch/segment-anything.git"}
+opencv-python = "^4.9.0.80"
+pycocotools = "^2.0.7"
+matplotlib = "^3.8.2"
+onnxruntime = "^1.16.3"
+onnx = "^1.15.0"
+supervision = "^0.17.1"
+pandas = "^2.1.4"
+torch = {version = "^2.1.2+cu118", source = "torch_cu118"}
+torchvision = {version = "^0.16.2+cu118", source = "torch_cu118"}
+torchaudio = {version = "^2.1.2+cu118", source = "torch_cu118"}
+ipykernel = "^6.29.0"
+ultralytics = "^8.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+flake8 = "^7.0.0"
+ipykernel = "^6.28.0"
+
+
+[[tool.poetry.source]]
+name = "torch_cu118"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
