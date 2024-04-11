@@ -6,7 +6,7 @@ Segmentation タスクの実験用リポジトリ
 
 必須要件
 
-- Python 3.9 以上
+- Python 3.9
 
 ### Use Poetry
 
