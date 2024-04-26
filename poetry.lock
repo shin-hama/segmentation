@@ -679,6 +679,23 @@ ssh = ["paramiko"]
 tqdm = ["tqdm"]
 
 [[package]]
+name = "hub-sdk"
+version = "0.0.8"
+description = "Ultralytics HUB Client SDK."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "hub-sdk-0.0.8.tar.gz", hash = "sha256:8181f96747cd636ffe2059465bc1b0fb6f26809b44969da7511567849c5b3917"},
+    {file = "hub_sdk-0.0.8-py3-none-any.whl", hash = "sha256:720b3a882d0399979ac9a427680cb331f2e48a42982f2f1a013011bfee0cb35b"},
+]
+
+[package.dependencies]
+requests = "*"
+
+[package.extras]
+dev = ["coverage[toml]", "mkdocs-material", "mkdocs-redirects", "mkdocs-ultralytics-plugin (>=0.0.44)", "mkdocstrings[python]", "pytest", "pytest-cov"]
+
+[[package]]
 name = "humanfriendly"
 version = "10.0"
 description = "Human friendly output for text interfaces using Python"
@@ -2794,4 +2811,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "0fe46b752b667942ab61a1c70da46383c50d2fd30dad56cb48b008d466ce5505"
+content-hash = "1240cb91b978b2c9369107ed429b9a66d6211a94791844f0813276d6c5261014"
