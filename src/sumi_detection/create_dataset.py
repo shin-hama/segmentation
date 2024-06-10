@@ -17,7 +17,7 @@ def relabeling():
             lines = f.readlines()
         with open(new_labels_dir / label.name, "w") as f:
             for line in lines:
-                if line.startswith("15 "):
+                if line.startswith("15 "):  # 15 は猫のラベル
                     f.write("1" + line[2:])
                 else:
                     continue
