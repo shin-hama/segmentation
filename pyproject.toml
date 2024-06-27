@@ -21,6 +21,10 @@ torchaudio = {version = "^2.1.2+cu118", source = "torch_cu118"}
 ipykernel = "^6.29.0"
 ultralytics = "^8.1.2"
 hub-sdk = "^0.0.8"
+jupyterlab-rise = "^0.42.0"
+jupyterlab = "^4.2.2"
+jupyterlab-language-pack-ja-jp = "^4.2.post1"
+google-cloud-vision = "^3.7.2"
 
 
 [tool.poetry.group.dev.dependencies]
